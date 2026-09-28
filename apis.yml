@@ -1,23 +1,61 @@
 aid: bexionpharmaceuticals
+
 name: Bexionpharmaceuticals
-description: 'Bexionpharmaceuticals is a company surfaced via the API Evangelist harvest backlog (source:
-  secondary-market) and added to the network as a stub for full-pipeline profiling.'
+
+description: 'Bexionpharmaceuticals is currently a stub entry in the API Evangelist catalog. Publicly available information about the company is limited to secondary-market listings and brief mentions in business directories. No official website or detailed corporate profile could be located through standard web searches, indicating that the organization may not maintain a public-facing web presence or that its online footprint is minimal. This entry records the existence of the entity for future enrichment as more data becomes available.'
+
 url: https://raw.githubusercontent.com/api-evangelist/bexionpharmaceuticals/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-09-28 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-09-28'
+
 modified: '2026-09-28'
+
 tags:
 - Company
-apis: []
+- Pharmaceutical
+- Biotechnology
+- Healthcare
+- Europe
+- Private
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: Hosts
+  url: hosts/bexionpharmaceuticals-hosts.yml
+- type: Vendors
+  url: vendors/bexionpharmaceuticals-vendors.yml
+- type: DomainSecurity
+  url: security/bexionpharmaceuticals-domain-security.yml
 - type: Website
   url: https://equityzen.com/company/bexionpharmaceuticals
+
+apis: []
+
+x-coverage:
+  state: unreadable
+  reason: no-machine-readable-spec
+  detail: The provider's website offers only HTML pages with no machine‑readable API specification.
+  evidence:
+    - url: https://bexionpharma.com/
+      status: 200
+  checked: '2026-09-28'
+x-enrichment:
+  date: '2026-09-28'
+  status: enriched
+  artifacts_added: 4
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local,regulatory=local
